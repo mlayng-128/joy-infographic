@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skill Building and Management Systems</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>Skill Building and Management Systems</h1>
+
+  <div class="skill-wrapper">
+
+    <img src="skill-building.png"
+         alt="Skill Building and Management Systems infographic"
+         class="skill-img">
+
+    <!-- TITLE SECTION -->
+    <button class="skill-hotspot skill-title"
+      onclick="openCorePanel(
+        'Skill Building and Management Systems',
+        'Build the habits that help joy take root and grow.\n\nJoy is a practice. These skills help you notice, nurture, protect, and grow joy in daily life. Joy does not only happen by accident. It grows through attention, intention, and care.'
+      )"
+      aria-label="Skill Building title section"></button>
+
+    <!-- AWARENESS -->
+    <button class="skill-hotspot skill-awareness"
+      onclick="openCorePanel(
+        'The Skill:Awareness, notice what brings you joy',
+        'What it means: Awareness is the foundation. You cannot grow what you do not notice. Awareness helps you recognize the moments, people, activities, environments, and body signals that spark joy.\n\nHow to practice it: Pause throughout the day and ask, What feels good right now? Keep a journal to track patterns. Notice small moments; beauty, connection, laughter, peace. Tune into your body and emotions as signals.'
+      )"
+      aria-label="Awareness"></button>
+
+    <!-- SAVORING -->
+    <button class="skill-hotspot skill-savoring"
+      onclick="openCorePanel(
+        'The Skill: Savoring; slow down and fully experience it.',
+        'What it means: Savoring helps joy sink in and last longer. It trains your mind and body to stay present and absorb goodness.\n\nHow to practice it: When something good happens, pause, and really take it in. Use your senses; what do you see, hear, feel, taste, or smell? Relive positive moments in your mind. Share the moment with someone.'
+      )"
+      aria-label="Savoring"></button>
+
+    <!-- GRATITUDE -->
+    <button class="skill-hotspot skill-gratitude"
+      onclick="openCorePanel(
+        'The Skill: Gratitude; regularly acknowledge the good.',
+        'What it means: Gratitude shifts attention toward what is working and good in life. It deepens joy and strengthens resilience.\n\nHow to practice it: Write down 3 things you\'re grateful for daily. Thanks people, let them know they matter. Look for the effort, kindness, and small wins. End your day by reflecting on what went well.'
+      )"
+      aria-label="Gratitude"></button>
+
+    <!-- INTENTIONAL ACTION -->
+    <button class="skill-hotspot skill-action"
+      onclick="openCorePanel(
+        'The Skill: Intentional Action; build joy into your day.',
+        'What it means: Joy grows when we intentionally create space for what matters. Small, consistent actions lead to big changes.\n\nHow to practice it: Schedule joyful activities like important appointments. Do one small thing each day that brings you joy. Choose activities that match your values. Make joy a non\-negotiable part of self\-care.'
+      )"
+      aria-label="Intentional Action"></button>
+
+    <!-- BOUNDARIES -->
+    <button class="skill-hotspot skill-boundaries"
+      onclick="openCorePanel(
+        'The Skill: Boundaries; Protect your energy and your time.',
+        'What it means: Boundaries protect joy by preventing burnout, overwhelm, and emotional drain. They create the space joy needs to thrive.\n\nHow to practice it: Learn to say no to what drains you. Protect time for rest, connection, and joy. Limit comparison, overcommitment, and negative influences. Honor your needs without guilt.'
+      )"
+      aria-label="Boundaries"></button>
+
+    <!-- RECONNECTION -->
+    <button class="skill-hotspot skill-reconnection"
+      onclick="openCorePanel(
+        'The Skill: Reconnection; Return to what matters.',
+        'What it means: When joy fades, reconnection helps you realign with your values, passions, people, and purpose. It brings you back home to yourself.\n\nHow to practice it: Spend time in nature or in quiet reflection. Revisit activities that once brought you joy. Reconnect with people who lift you up. Remember your why, what matters most.'
+      )"
+      aria-label="Reconnection"></button>
+
+    <!-- CELEBRATION -->
+    <button class="skill-hotspot skill-celebration"
+      onclick="openCorePanel(
+        'The Skill: Celebration; Honor wins, big and small.',
+        'What it means: Celebration reinforces joy by acknowledging progress and creating positive momentum.\n\nHow to practice it: Celebrate small steps and everyday wins. Mark milestones in meaningful ways. Share your achievements with others. Give yourself permission to feel proud.'
+      )"
+      aria-label="Celebration"></button>
+
+    <!-- JOY SKILL CYCLE -->
+    <button class="skill-hotspot skill-cycle"
+      onclick="openCorePanel(
+        'The Joy Skill Cycle',
+        'Awareness, savoring, gratitude, intentional action, boundaries, reconnection, and celebration.\n\nNotice it. Feel it. Appreciate it. Make it happen. Protect it. Return to it. Celebrate it. Keeping the cycle going helps joy grow stronger with practice.'
+      )"
+      aria-label="The Joy Skill Cycle"></button>
+
+    <!-- REMEMBER -->
+    <button class="skill-hotspot skill-remember"
+      onclick="openCorePanel(
+        'Remember',
+        'Joy does not happen only by accident. It grows through attention, intention, and care.\n\nYou have the power to cultivate it.'
+      )"
+      aria-label="Remember"></button>
+
+  </div>
+
+  <div id="corePanel" class="core-panel hidden">
+    <h2 id="corePanelTitle"></h2>
+    <p id="corePanelText"></p>
+
+    <button onclick="speakCoreText()">🔊 Listen</button>
+    <button onclick="closeCorePanel()">Close</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

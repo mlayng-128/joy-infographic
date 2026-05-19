@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mode of Operation: How Joy Works</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>Mode of Operation: How Joy Works</h1>
+
+  <div class="mode-wrapper">
+
+    <img src="mode-of-operation.png"
+         alt="Mode of Operation: How Joy Works infographic"
+         class="mode-img">
+
+    <!-- TITLE SECTION -->
+    <button class="mode-hotspot mode-title"
+      onclick="openCorePanel(
+        'Mode of Operation: How Joy Works',
+        'Joy is not random. It has a natural way of working within us. Joy expands, connects, elevates, heals, amplifies, and inspires.'
+      )"
+      aria-label="Mode of Operation title section">
+    </button>
+
+    <!-- EXPANDS -->
+    <button class="mode-hotspot mode-expands"
+      onclick="openCorePanel(
+        'Expands',
+        'Joy widens our thinking and awareness. It opens us to more possibilities and helps us see the bigger picture.\n\nHow it shows up: You feel more open, curious, and flexible. Your perspective becomes broader.\n\nWhat you can do: Try something new. Ask what else is possible. Spend time in inspiring environments. Let curiosity lead.'
+      )"
+      aria-label="Expands">
+    </button>
+
+    <!-- CONNECTS -->
+    <button class="mode-hotspot mode-connects"
+      onclick="openCorePanel(
+        'Connects',
+        'Joy draws us toward others. It deepens bonds, builds trust, and creates a sense of belonging and togetherness.\n\nHow it shows up: You feel closer to others and more understood. And others may feel that warmth from you too.\n\nWhat you can do: Share smiles and laughter. Express appreciation. Listen deeply. Create moments together.'
+      )"
+      aria-label="Connects">
+    </button>
+
+    <!-- ELEVATES -->
+    <button class="mode-hotspot mode-elevates"
+      onclick="openCorePanel(
+        'Elevates',
+        'Joy boosts energy, motivation, and mindset. It lifts our mood and helps us rise above challenges.\n\nHow it shows up: You feel lighter, more motivated, and more confident about taking action.\n\nWhat you can do: Celebrate small wins. Focus on what is going well. Move your body. Do things that energize you.'
+      )"
+      aria-label="Elevates">
+    </button>
+
+    <!-- HEALS -->
+    <button class="mode-hotspot mode-heals"
+      onclick="openCorePanel(
+        'Heals',
+        'Joy reduces stress, restores balance, and supports our emotional and physical well-being. It helps us recover.\n\nHow it shows up: You feel calmer, more at ease, and emotionally recharged.\n\nWhat you can do: Rest and breathe. Notice moments of joy. Practice self-compassion. Spend time in nature.'
+      )"
+      aria-label="Heals">
+    </button>
+
+    <!-- AMPLIFIES -->
+    <button class="mode-hotspot mode-amplifies"
+      onclick="openCorePanel(
+        'Amplifies',
+        'Joy strengthens positive experiences and makes good moments even more meaningful.\n\nHow it shows up: Positive moments feel richer, deeper, and more memorable.\n\nWhat you can do: Savor the good moments. Reflect on what went well. Share joy with others. Be fully present.'
+      )"
+      aria-label="Amplifies">
+    </button>
+
+    <!-- INSPIRES -->
+    <button class="mode-hotspot mode-inspires"
+      onclick="openCorePanel(
+        'Inspires',
+        'Joy sparks creativity, purpose, and a desire to contribute. It motivates us to create and uplift others.\n\nHow it shows up: You feel inspired to create, help, dream, and make a positive impact.\n\nWhat you can do: Follow your passions. Help someone. Create something meaningful. Live with purpose.'
+      )"
+      aria-label="Inspires">
+    </button>
+
+    <!-- BOTTOM SECTION -->
+    <button class="mode-hotspot mode-bottom"
+      onclick="openCorePanel(
+        'Joy is active. Joy is alive. Joy works within you.',
+        'The more we invite joy into our lives, the more it shapes our thoughts, relationships, choices, and the world around us. Let joy be your way of living.'
+      )"
+      aria-label="Joy is active bottom section">
+    </button>
+
+  </div>
+
+  <div id="corePanel" class="core-panel hidden">
+    <h2 id="corePanelTitle"></h2>
+    <p id="corePanelText"></p>
+
+    <button onclick="speakCoreText()">🔊 Listen</button>
+    <button onclick="closeCorePanel()">Close</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

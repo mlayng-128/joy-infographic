@@ -1,0 +1,743 @@
+body{
+  margin:0;
+  padding:20px;
+  background:#08111f;
+  color:white;
+  font-family:Arial,sans-serif;
+}
+
+.container{
+  max-width:1200px;
+  margin:auto;
+}
+
+/* =========================
+MAIN INFOGRAPHIC
+========================= */
+
+.image-wrapper{
+  position:relative;
+}
+
+.infographic{
+  width:100%;
+  border-radius:20px;
+  display:block;
+}
+
+/* =========================
+MAIN HOTSPOTS
+========================= */
+
+.hotspot{
+  position:absolute;
+  background:transparent;
+  border:3px solid transparent;
+  cursor:pointer;
+  margin:0;
+  padding:0;
+  z-index:20;
+}
+
+/* YELLOW HOTSPOTS */
+
+.hotspot:hover{
+  border:3px solid yellow;
+}
+
+/* =========================
+MAIN INFOGRAPHIC POSITIONS
+========================= */
+
+/* CORE CHARACTERISTICS */
+.core{
+  top:8.5%;
+  left:1%;
+  width:23%;
+  height:19%;
+}
+
+/* ORIENTATION */
+.orientation{
+  top:8.5%;
+  left:25.5%;
+  width:20%;
+  height:19%;
+}
+
+/* TYPICAL */
+.typical{
+  top:28.5%;
+  left:1%;
+  width:62%;
+  height:12%;
+}
+
+/* MODE */
+.mode{
+  top:28.5%;
+  left:64.8%;
+  width:34%;
+  height:12%;
+}
+
+/* SKILL */
+.skill{
+  top:41.5%;
+  left:38.5%;
+  width:31%;
+  height:22%;
+}
+
+/* EMOTIONAL BANDWIDTH */
+.bandwidth{
+  top:8.5%;
+  left:48%;
+  width:25%;
+  height:19%;
+}
+
+/* LEVELS OF INTENSITY */
+.intensity{
+  top:8.5%;
+  left:74%;
+  width:24.5%;
+  height:19%;
+}
+
+/* STRESS */
+.stress{
+  top:42%;
+  left:1%;
+  width:35.5%;
+  height:20.5%;
+}
+
+/* GROUND JOY */
+.ground{
+  top:42%;
+  left:71.5%;
+  width:28%;
+  height:21.5%;
+}
+
+/* RELATIONSHIPS */
+.relationships{
+  top:64.5%;
+  left:1%;
+  width:78.5%;
+  height:14%;
+}
+
+/* QUOTE */
+.quote{
+  top:64.5%;
+  left:81.5%;
+  width:16.5%;
+  height:14%;
+}
+
+/* POWER DYNAMICS */
+.dynamics{
+  top:79.5%;
+  left:1%;
+  width:71.5%;
+  height:16%;
+}
+
+/* POWER LEVELS */
+.power{
+  top:79.5%;
+  left:74%;
+  width:24%;
+  height:16%;
+}
+
+/* ESSENCE */
+.essence{
+  top:96%;
+  left:1%;
+  width:98%;
+  height:3.5%;
+}
+
+/* =========================
+ORANGE HOTSPOTS
+========================= */
+
+.bandwidth:hover,
+.intensity:hover,
+.stress:hover,
+.ground:hover,
+.relationships:hover,
+.quote:hover,
+.dynamics:hover,
+.power:hover,
+.essence:hover{
+  border:3px solid orange;
+}
+
+/* =========================
+SIDE PANEL
+========================= */
+
+.panel{
+  position:fixed;
+  top:0;
+  right:0;
+  width:350px;
+  height:100%;
+  background:#13243d;
+  padding:25px;
+  overflow-y:auto;
+  box-shadow:-5px 0 15px rgba(0,0,0,0.5);
+  z-index:1000;
+}
+
+.hidden{
+  display:none;
+}
+
+button{
+  padding:10px 16px;
+  margin:5px;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+/* =========================
+CORE CHARACTERISTICS PAGE
+========================= */
+
+.core-wrapper{
+  position:relative;
+  width:100%;
+  max-width:1100px;
+  margin:auto;
+}
+
+.core-img{
+  width:100%;
+  display:block;
+  border-radius:20px;
+}
+
+/* CORE HOTSPOTS */
+
+.core-hotspot{
+  position:absolute;
+  background:transparent;
+  border:3px solid transparent;
+  cursor:pointer;
+  margin:0;
+  padding:0;
+  z-index:50;
+}
+
+.core-hotspot:hover{
+  border:3px solid orange;
+}
+
+/* TITLE */
+
+.core-title{
+  top:0%;
+  left:2%;
+  width:92%;
+  height:18%;
+}
+
+/* ROWS */
+
+.core-uplifting{
+  top:18%;
+  left:2.2%;
+  width:92%;
+  height:12%;
+}
+
+.core-awareness{
+  top:31%;
+  left:2.2%;
+  width:93%;
+  height:12%;
+}
+
+.core-connection{
+  top:43.5%;
+  left:2.2%;
+  width:93%;
+  height:12%;
+}
+
+.core-creativity{
+  top:55.5%;
+  left:2.2%;
+  width:95%;
+  height:12%;
+}
+
+.core-wellbeing{
+  top:67.5%;
+  left:2%;
+  width:93%;
+  height:11.5%;
+}
+
+.core-contagious{
+  top:79%;
+  left:2.2%;
+  width:93%;
+  height:11%;
+}
+
+/* BOTTOM LEFT */
+
+.core-bottom-main{
+  position:absolute;
+  top:90%;
+  left:2.2%;
+  width:64.5%;
+  height:10%;
+}
+
+/* BOTTOM RIGHT QUOTE */
+
+.core-twain{
+  position:absolute;
+  top:90%;
+  left:68%;
+  width:28.5%;
+  height:10%;
+}
+
+/* =========================
+CORE SIDE PANEL
+========================= */
+
+.core-panel{
+  position:fixed;
+  top:80px;
+  right:30px;
+  width:360px;
+  max-height:80vh;
+  overflow-y:auto;
+  background:#071527;
+  color:white;
+  border:2px solid orange;
+  border-radius:16px;
+  padding:24px;
+  box-shadow:0 0 25px rgba(255,165,0,0.35);
+
+  z-index:10000;
+}
+
+.core-panel h2{
+  color:#ffd43b;
+  margin-top:0;
+}
+
+.core-panel p{
+  line-height:1.6;
+}
+
+.core-panel button{
+  margin-right:8px;
+  margin-top:12px;
+  padding:10px 14px;
+  border-radius:8px;
+  border:none;
+  cursor:pointer;
+}
+
+/* =========================
+TYPICAL CONTEXTS PAGE
+========================= */
+
+.typical-wrapper{
+  position:relative;
+  width:100%;
+  max-width:1300px;
+  margin:auto;
+}
+
+.typical-img{
+  width:100%;
+  display:block;
+  border-radius:20px;
+}
+
+.typical-hotspot{
+  position:absolute;
+  background:transparent;
+  border:3px solid transparent;
+  cursor:pointer;
+  margin:0;
+  padding:0;
+  z-index:50;
+}
+
+.typical-hotspot:hover{
+  border:3px solid orange;
+}
+
+/* TITLE */
+.typical-title{
+  top:0%;
+  left:0%;
+  width:100%;
+  height:16%;
+}
+
+/* TOP ROW */
+.typical-connection{
+  top:17%;
+  left:1%;
+  width:19%;
+  height:30%;
+}
+
+.typical-achievement{
+  top:17%;
+  left:21%;
+  width:19%;
+  height:30%;
+}
+
+.typical-kindness{
+  top:17%;
+  left:41%;
+  width:19%;
+  height:30%;
+}
+
+.typical-play{
+  top:17%;
+  left:61%;
+  width:19%;
+  height:30%;
+}
+
+.typical-nature{
+  top:17%;
+  left:81%;
+  width:18%;
+  height:30%;
+}
+
+/* SECOND ROW */
+.typical-values{
+  top:49%;
+  left:1%;
+  width:19%;
+  height:30%;
+}
+
+.typical-gratitude{
+  top:49%;
+  left:21%;
+  width:19%;
+  height:30%;
+}
+
+.typical-shared{
+  top:49%;
+  left:41%;
+  width:19%;
+  height:30%;
+}
+
+.typical-movement{
+  top:49%;
+  left:61%;
+  width:19%;
+  height:30%;
+}
+
+.typical-calm{
+  top:49%;
+  left:81%;
+  width:18%;
+  height:30%;
+}
+
+/* BOTTOM SECTIONS */
+.typical-why{
+  top:82.2%;
+  left:1%;
+  width:47%;
+  height:17.4%;
+}
+
+.typical-small{
+  top:82.2%;
+  left:49.5%;
+  width:50%;
+  height:17.4%;
+}
+
+/* =========================
+SKILL BUILDING PAGE
+========================= */
+
+.skill-wrapper{
+  position:relative;
+  width:100%;
+  max-width:1100px;
+  margin:auto;
+}
+
+.skill-img{
+  width:100%;
+  display:block;
+  border-radius:20px;
+}
+
+.skill-hotspot{
+  position:absolute;
+  background:transparent;
+  border:3px solid transparent;
+  cursor:pointer;
+  margin:0;
+  padding:0;
+  z-index:50;
+}
+
+.skill-hotspot:hover{
+  border:3px solid orange;
+}
+
+/* TITLE SECTION */
+.skill-title{
+  top:0%;
+  left:0%;
+  width:100%;
+  height:13%;
+}
+
+/* ROWS */
+.skill-awareness{
+  top:13.3%;
+  left:1%;
+  width:98%;
+  height:13.2%;
+}
+
+.skill-savoring{
+  top:26.8%;
+  left:1%;
+  width:98%;
+  height:11%;
+}
+
+.skill-gratitude{
+  top:38%;
+  left:1%;
+  width:98%;
+  height:10.8%;
+}
+
+.skill-action{
+  top:48.3%;
+  left:1%;
+  width:98%;
+  height:9.8%;
+}
+
+.skill-boundaries{
+  top:58.3%;
+  left:1%;
+  width:98%;
+  height:9.8%;
+}
+
+.skill-reconnection{
+  top:67.8%;
+  left:1%;
+  width:98%;
+  height:8%;
+}
+
+.skill-celebration{
+  top:76.1%;
+  left:1%;
+  width:98%;
+  height:8.8%;
+}
+
+/* BOTTOM SECTIONS */
+.skill-cycle{
+  top:86%;
+  left:1%;
+  width:72.3%;
+  height:14%;
+}
+
+.skill-remember{
+  top:86%;
+  left:75%;
+  width:24%;
+  height:14%;
+}
+
+/* =========================
+ORIENTATION PAGE
+========================= */
+
+.orientation-wrapper{
+  position:relative;
+  width:100%;
+  max-width:1000px;
+  margin:auto;
+}
+
+.orientation-img{
+  width:100%;
+  display:block;
+  border-radius:20px;
+}
+
+.orientation-hotspot{
+  position:absolute;
+  background:transparent;
+  border:3px solid transparent;
+  cursor:pointer;
+  margin:0;
+  padding:0;
+  z-index:50;
+}
+
+.orientation-hotspot:hover{
+  border:3px solid orange;
+}
+
+/* TITLE SECTION */
+.orientation-title{
+  top:0%;
+  left:0%;
+  width:100%;
+  height:24%;
+}
+
+/* FUTURE */
+.orientation-future{
+  top:24.5%;
+  left:3%;
+  width:94%;
+  height:18.5%;
+}
+
+/* PAST */
+.orientation-past{
+  top:44.2%;
+  left:3%;
+  width:94%;
+  height:19.7%;
+}
+
+/* PRESENT */
+.orientation-present{
+  top:64%;
+  left:3%;
+  width:94%;
+  height:18.3%;
+}
+
+/* BOTTOM BALANCE SECTION */
+.orientation-balance{
+  top:83.5%;
+  left:3%;
+  width:94%;
+  height:15%;
+}
+
+/* =========================
+MODE OF OPERATION PAGE
+========================= */
+
+.mode-wrapper{
+  position:relative;
+  width:100%;
+  max-width:1200px;
+  margin:auto;
+}
+
+.mode-img{
+  width:100%;
+  display:block;
+  border-radius:20px;
+}
+
+.mode-hotspot{
+  position:absolute;
+  background:transparent;
+  border:3px solid transparent;
+  cursor:pointer;
+  margin:0;
+  padding:0;
+  z-index:100;
+}
+
+.mode-hotspot:hover{
+  border:3px solid orange;
+}
+
+/* TITLE */
+.mode-title{
+  top:0%;
+  left:0%;
+  width:100%;
+  height:14%;
+}
+
+/* ROWS */
+.mode-expands{
+  top:15%;
+  left:1%;
+  width:98%;
+  height:13.5%;
+}
+
+.mode-connects{
+  top:29%;
+  left:1%;
+  width:98%;
+  height:13.5%;
+}
+
+.mode-elevates{
+  top:43%;
+  left:1%;
+  width:98%;
+  height:13.5%;
+}
+
+.mode-heals{
+  top:56.8%;
+  left:1%;
+  width:98%;
+  height:11.7%;
+}
+
+.mode-amplifies{
+  top:68.8%;
+  left:1%;
+  width:98%;
+  height:10.4%;
+}
+
+.mode-inspires{
+  top:80%;
+  left:1%;
+  width:98%;
+  height:12%;
+}
+
+/* BOTTOM */
+.mode-bottom{
+  top:92%;
+  left:1%;
+  width:98%;
+  height:7%;
+}

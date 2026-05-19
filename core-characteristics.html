@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0"/>
+
+  <title>Core Characteristics of Joy</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>Core Characteristics of Joy</h1>
+
+  <div class="core-wrapper">
+
+    <img src="core-characteristics.png"
+         alt="Core Characteristics of Joy infographic"
+         class="core-img">
+
+    <!-- TITLE SECTION -->
+    <button class="core-hotspot core-title"
+      onclick="openCorePanel(
+        'The Core Characteristics of Joy',
+        'Joy is more than a feeling. It is a way of experiencing life. It energizes, opens, and uplifts. These core characteristics describe the unique nature of joy and how it shows up in our lives.'
+      )"
+      aria-label="The Core Characteristics of Joy">
+    </button>
+
+    <!-- UPLIFTING -->
+<button class="core-hotspot core-uplifting"
+  onclick="openCorePanel(
+    'Characteristics: Uplifting, Warm, and Energizing',
+    'What it means: Joy lifts our inner state and renews our energy. Joy naturally elevates mood, increases motivation, and brings a sense of lightness and vitality. It refreshes both the mind and the body. It makes life feel more alive.\n\nExamples: Feeling a rush of happiness after good news. Laughing until you feel lighter. Feeling inspired and ready to take on the day. A warm sense of inner glow.'
+  )"
+  aria-label="Uplifting, Warm, and Energizing">
+</button>
+
+    <!-- EXPANDS AWARENESS -->
+    <button class="core-hotspot core-awareness"
+      onclick="openCorePanel(
+        'Characteristics: Expands Awareness and Perspective','Joy helps us see more clearly and think more broadly.\n\nWhat it means: Joy widens attention and helps us see possibility, beauty, and meaning we might otherwise miss. It opens the mind and heart.\n\nExamples: Seeing beauty in nature. Feeling hopeful about the future. Finding new solutions to problems. Seeing others with more compassion.'
+      )"
+      aria-label="Expands Awareness and Perspective">
+    </button>
+
+    <!-- CONNECTION -->
+    <button class="core-hotspot core-connection"
+      onclick="openCorePanel(
+        'Characteristics: Creates Connection and Belonging', 'Joy draws us toward others and deepens our relationships.\n\nWhat it means: Joy naturally fosters closeness, trust, and emotional connection. It strengthens bonds and builds a sense of community. It reminds us we are not alone.\n\nExamples: Sharing laughter with friends. Celebrating together. Feeling seen and understood. Experiencing a sense of belonging in a group.'
+      )"
+      aria-label="Creates Connection and Belonging">
+    </button>
+
+    <!-- CREATIVITY -->
+    <button class="core-hotspot core-creativity"
+      onclick="openCorePanel(
+        'Characteristics: Increases Openness and Creativity', 'Joy encourages curiosity, play, and creative expression.\n\nWhat it means: Joy reduces mental rigidity and invites exploration and imagination. It helps us think and feel freely.\n\nExamples: Feeling playful and spontaneous. Creating are, writing, or music. Trying something new. Solving problems with fresh ideas.'
+      )"
+      aria-label="Increases Openness and Creativity">
+    </button>
+
+    <!-- WELL-BEING -->
+    <button class="core-hotspot core-wellbeing"
+      onclick="openCorePanel(
+        'Characteristics: Promotes Well-Being and Resilience', 'Joy strengthens our emotional and physical health.\n\nWhat it means: Joy supports the nervous system, boosts resilience, and helps us recover from stress and challenges. It builds inner  strength.\n\nExamples: Feeling emotionally balanced. Recovering from a hard day. Feeling grateful and grounded. Having more patience and calm.'
+      )"
+      aria-label="Promotes Well-Being and Resilience">
+    </button>
+
+    <!-- CONTAGIOUS -->
+    <button class="core-hotspot core-contagious"
+      onclick="openCorePanel(
+        'Characteristics: Contagious and Inspirational', 'Joy spreads. It uplifts others and creates positive impact.\n\nWhat it means: Joy is felt by others and can inspire hope, motivation, and positivity in those around us. It creates a ripple effect.\n\nExamples: A smile that brightens soomeone\'s day. Inspiring others with your enthusiasm. Creating a positive environment.'
+      )"
+      aria-label="Contagious and Inspirational">
+    </button>
+
+<div class="core-bottom-zone">
+
+  <button class="core-hotspot core-bottom-main"
+    onclick="openCorePanel(
+      'Joy touches every part of us: Mind, heart, body, relationships, spirt', 'Joy is not just one feeling. It is a rich experience that touches our thoughts, emotions, bodies, and relationships. It is a foundation for a meaningful life.\n\nJoy is a choice. A practice. A way of living.\n\nNurture it. Protect it. Share it. Let it guide your life.'
+    )"
+    aria-label="Joy as a whole-life experience">
+  </button>
+
+  <button class="core-hotspot core-twain"
+    onclick="openCorePanel(
+      'Mark Twain Quote',
+      'To get the full value of joy you must have someone to divide it with. Mark Twain'
+    )"
+    aria-label="Mark Twain quote about joy">
+  </button>
+
+</div>  
+
+  <!-- RIGHT SIDE PANEL -->
+
+  <div id="corePanel"
+       class="core-panel hidden">
+
+    <h2 id="corePanelTitle"></h2>
+
+    <p id="corePanelText"></p>
+
+    <button onclick="speakCoreText()">
+      🔊 Listen
+    </button>
+
+    <button onclick="closeCorePanel()">
+      Close
+    </button>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

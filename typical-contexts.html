@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Typical Contexts for Joy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>Typical Contexts for Joy</h1>
+
+  <div class="typical-wrapper">
+
+    <img src="typical-contexts.png"
+         alt="Typical Contexts Where Joy Naturally Arises infographic"
+         class="typical-img">
+
+    <!-- TITLE SECTION -->
+    <button class="typical-hotspot typical-title"
+      onclick="openCorePanel(
+        'Typical Contexts: Where Joy Naturally Arises',
+        'Joy grows in everyday moments and meaningful experiences. These are common contexts that trigger or nurture joy in our lives.'
+      )"
+      aria-label="Typical Contexts title section"></button>
+
+    <!-- MEANINGFUL CONNECTION -->
+    <button class="typical-hotspot typical-connection"
+      onclick="openCorePanel(
+        'Meaningful Connection',
+        'Spending quality time with people who understand, accept, and support us.'
+      )"
+      aria-label="Meaningful Connection"></button>
+
+    <!-- ACHIEVEMENT AND PROGRESS -->
+    <button class="typical-hotspot typical-achievement"
+      onclick="openCorePanel(
+        'Achievement and Progress',
+        'Reaching goals, overcoming challenges, and recognizing our growth and efforts.'
+      )"
+      aria-label="Achievement and Progress"></button>
+
+    <!-- ACTS OF KINDNESS -->
+    <button class="typical-hotspot typical-kindness"
+      onclick="openCorePanel(
+        'Acts of Kindness and Generosity',
+        'Helping others, being kind, and experiencing the joy of giving and making a difference.'
+      )"
+      aria-label="Acts of Kindness and Generosity"></button>
+
+    <!-- PLAY, CREATIVITY, EXPRESSION -->
+    <button class="typical-hotspot typical-play"
+      onclick="openCorePanel(
+        'Play, Creativity, and Expression',
+        'Engaging in activities that spark imagination, allow self\-expression, and bring playfulness'
+      )"
+      aria-label="Play Creativity and Expression"></button>
+
+    <!-- NATURE AND BEAUTY -->
+    <button class="typical-hotspot typical-nature"
+      onclick="openCorePanel(
+        'Nature and Beauty',
+        'Experiencing the natural world; sunrises, fresh air, scenic views, and the rhythm of life.'
+      )"
+      aria-label="Nature and Beauty"></button>
+
+    <!-- LIVING IN ALIGNMENT WITH VALUES -->
+    <button class="typical-hotspot typical-values"
+      onclick="openCorePanel(
+        'Living in Alignment With Values',
+        'Acting in ways that reflect what matters most to us and living with integrity'
+      )"
+      aria-label="Living in Alignment With Values"></button>
+
+    <!-- GRATITUDE AND APPRECIATION -->
+    <button class="typical-hotspot typical-gratitude"
+      onclick="openCorePanel(
+        'Gratitude and Appreciation',
+        'Noticing and appreciating the good in our lives; big or small, and expressing thankfulness.'
+      )"
+      aria-label="Gratitude and Appreciation"></button>
+
+    <!-- SHARED EXPERIENCES -->
+    <button class="typical-hotspot typical-shared"
+      onclick="openCorePanel(
+        'Shared Experiences and Traditions',
+        'Creating memories together through celebrations, rituals, and meaningful traditions.'
+      )"
+      aria-label="Shared Experiences and Traditions"></button>
+
+    <!-- MOVEMENT AND PHYSICAL VITALITY -->
+    <button class="typical-hotspot typical-movement"
+      onclick="openCorePanel(
+        'Movement and Physical Vitality',
+        'Moving our bodies in ways that feel good, build energy, and release stress.'
+      )"
+      aria-label="Movement and Physical Vitality"></button>
+
+    <!-- MOMENTS OF CALM -->
+    <button class="typical-hotspot typical-calm"
+      onclick="openCorePanel(
+        'Moments of Calm',
+        'Pausing, slowing down, and finding peace in simple moments of rest and stillness.'
+      )"
+      aria-label="Moments of Calm"></button>
+
+    <!-- WHY CONTEXTS MATTER -->
+    <button class="typical-hotspot typical-why"
+      onclick="openCorePanel(
+        'Why Contexts Matter',
+        'Joy is not random. It is shaped by where we spend our time, who we are with, and what we engage in. By intentionally creating more joy-supporting contexts in daily life, we increase the opportunities for joy to emerge and grow.'
+      )"
+      aria-label="Why Contexts Matter"></button>
+
+    <!-- IN SMALL MOMENTS -->
+    <button class="typical-hotspot typical-small"
+      onclick="openCorePanel(
+        'In Small Moments or Big Ones, Joy Is All Around Us\n\nJoy often grows where life is fully lived.\n\nNotice it. Nurture it. Let it grow. Share it.'
+      )"
+      aria-label="In small moments or big ones joy is all around us"></button>
+
+  </div>
+
+  <div id="corePanel" class="core-panel hidden">
+    <h2 id="corePanelTitle"></h2>
+    <p id="corePanelText"></p>
+
+    <button onclick="speakCoreText()">🔊 Listen</button>
+    <button onclick="closeCorePanel()">Close</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

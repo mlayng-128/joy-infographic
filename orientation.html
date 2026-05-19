@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Orientation: The Direction of Joy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>Orientation: The Direction of Joy</h1>
+
+  <div class="orientation-wrapper">
+
+    <img src="orientation.png"
+         alt="Orientation: The Direction of Joy infographic"
+         class="orientation-img">
+
+    <!-- TITLE SECTION -->
+    <button class="orientation-hotspot orientation-title"
+      onclick="openCorePanel(
+        'Orientation: The Direction of Joy',
+        'Joy is shaped by where our attention and intention are focused: past, present, or future.'
+      )"
+      aria-label="Orientation title section">
+    </button>
+
+    <!-- FUTURE-ORIENTED JOY -->
+    <button class="orientation-hotspot orientation-future"
+      onclick="openCorePanel(
+        'Future-Oriented Joy',
+        'When joy is future\-oriented, it is tied to hopes, dreams, possibilities, and anticipated moments. This orientation motivates us, gives us something to look forward to and helps us persevere through challenges. Healthy future orientation inspires growth and purpose.'
+      )"
+      aria-label="Future-oriented joy">
+    </button>
+
+    <!-- PAST-ROOTED JOY -->
+    <button class="orientation-hotspot orientation-past"
+      onclick="openCorePanel(
+        'Past-Rooted Joy',
+        'When joy is past-rooted, it comes from meaningful memories, gratitude, and experiences that continue to nourish us. This orientation builds identity, provides comfort, and reminds us how far we\'ve come. It connects us to our story and the goodness we have already known.'
+      )"
+      aria-label="Past-rooted joy">
+    </button>
+
+    <!-- PRESENT-CENTERED JOY -->
+    <button class="orientation-hotspot orientation-present"
+      onclick="openCorePanel(
+        'Present-Centered Joy',
+        'When joy is present-centered joy it is fully experienced in this moment; through connection, awareness, and appreciation. This orientation deepens contentment, grounding, and aliveness. It helps us slow down and truly experience life as it unfolds.'
+      )"
+      aria-label="Present-centered joy">
+    </button>
+
+    <!-- BALANCED ORIENTATION -->
+    <button class="orientation-hotspot orientation-balance"
+      onclick="openCorePanel(
+        'Joy Flows When Orientation Is Balanced',
+        'Honoring the past, being preent now, and looking forward with hope creates a life filled with meaning, connection, and possibility.\n\nWhere your attention goes, joy follows.'
+      )"
+      aria-label="Joy flows when orientation is balanced">
+    </button>
+
+  </div>
+
+  <div id="corePanel" class="core-panel hidden">
+    <h2 id="corePanelTitle"></h2>
+    <p id="corePanelText"></p>
+
+    <button onclick="speakCoreText()">🔊 Listen</button>
+    <button onclick="closeCorePanel()">Close</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
