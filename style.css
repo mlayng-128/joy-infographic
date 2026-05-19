@@ -11,9 +11,7 @@ body{
   margin:auto;
 }
 
-/* =========================
-MAIN INFOGRAPHIC
-========================= */
+/* MAIN INFOGRAPHIC */
 
 .image-wrapper{
   position:relative;
@@ -25,9 +23,7 @@ MAIN INFOGRAPHIC
   display:block;
 }
 
-/* =========================
-MAIN HOTSPOTS
-========================= */
+/* MAIN HOTSPOTS */
 
 .hotspot{
   position:absolute;
@@ -39,15 +35,17 @@ MAIN HOTSPOTS
   z-index:20;
 }
 
-/* YELLOW HOTSPOTS */
-
 .hotspot:hover{
   border:3px solid yellow;
 }
 
-/* =========================
-MAIN INFOGRAPHIC POSITIONS
-========================= */
+/* MAIN TITLE HOTSPOT */
+.title{
+  top:0%;
+  left:0%;
+  width:100%;
+  height:8%;
+}
 
 /* CORE CHARACTERISTICS */
 .core{
@@ -105,8 +103,8 @@ MAIN INFOGRAPHIC POSITIONS
   height:19%;
 }
 
-/* STRESS */
-.stress{
+/* IN STRESSED SITUATIONS */
+.stressed{
   top:42%;
   left:1%;
   width:35.5%;
@@ -138,7 +136,7 @@ MAIN INFOGRAPHIC POSITIONS
 }
 
 /* POWER DYNAMICS */
-.dynamics{
+.power{
   top:79.5%;
   left:1%;
   width:71.5%;
@@ -146,7 +144,7 @@ MAIN INFOGRAPHIC POSITIONS
 }
 
 /* POWER LEVELS */
-.power{
+.powerlevels{
   top:79.5%;
   left:74%;
   width:24%;
@@ -161,25 +159,22 @@ MAIN INFOGRAPHIC POSITIONS
   height:3.5%;
 }
 
-/* =========================
-ORANGE HOTSPOTS
-========================= */
+/* ORANGE HOTSPOTS */
 
+.title:hover,
 .bandwidth:hover,
 .intensity:hover,
-.stress:hover,
+.stressed:hover,
 .ground:hover,
 .relationships:hover,
 .quote:hover,
-.dynamics:hover,
 .power:hover,
+.powerlevels:hover,
 .essence:hover{
   border:3px solid orange;
 }
 
-/* =========================
-SIDE PANEL
-========================= */
+/* SIDE PANEL */
 
 .panel{
   position:fixed;
@@ -206,9 +201,7 @@ button{
   cursor:pointer;
 }
 
-/* =========================
-CORE CHARACTERISTICS PAGE
-========================= */
+/* CORE CHARACTERISTICS PAGE */
 
 .core-wrapper{
   position:relative;
@@ -222,8 +215,6 @@ CORE CHARACTERISTICS PAGE
   display:block;
   border-radius:20px;
 }
-
-/* CORE HOTSPOTS */
 
 .core-hotspot{
   position:absolute;
@@ -239,7 +230,7 @@ CORE CHARACTERISTICS PAGE
   border:3px solid orange;
 }
 
-/* TITLE */
+/* CORE TITLE */
 
 .core-title{
   top:0%;
@@ -247,8 +238,6 @@ CORE CHARACTERISTICS PAGE
   width:92%;
   height:18%;
 }
-
-/* ROWS */
 
 .core-uplifting{
   top:18%;
@@ -292,8 +281,6 @@ CORE CHARACTERISTICS PAGE
   height:11%;
 }
 
-/* BOTTOM LEFT */
-
 .core-bottom-main{
   position:absolute;
   top:90%;
@@ -301,8 +288,6 @@ CORE CHARACTERISTICS PAGE
   width:64.5%;
   height:10%;
 }
-
-/* BOTTOM RIGHT QUOTE */
 
 .core-twain{
   position:absolute;
@@ -312,9 +297,7 @@ CORE CHARACTERISTICS PAGE
   height:10%;
 }
 
-/* =========================
-CORE SIDE PANEL
-========================= */
+/* CORE SIDE PANEL */
 
 .core-panel{
   position:fixed;
@@ -329,7 +312,6 @@ CORE SIDE PANEL
   border-radius:16px;
   padding:24px;
   box-shadow:0 0 25px rgba(255,165,0,0.35);
-
   z-index:10000;
 }
 
@@ -351,9 +333,7 @@ CORE SIDE PANEL
   cursor:pointer;
 }
 
-/* =========================
-TYPICAL CONTEXTS PAGE
-========================= */
+/* TYPICAL CONTEXTS PAGE */
 
 .typical-wrapper{
   position:relative;
@@ -382,7 +362,6 @@ TYPICAL CONTEXTS PAGE
   border:3px solid orange;
 }
 
-/* TITLE */
 .typical-title{
   top:0%;
   left:0%;
@@ -390,7 +369,6 @@ TYPICAL CONTEXTS PAGE
   height:16%;
 }
 
-/* TOP ROW */
 .typical-connection{
   top:17%;
   left:1%;
@@ -426,7 +404,6 @@ TYPICAL CONTEXTS PAGE
   height:30%;
 }
 
-/* SECOND ROW */
 .typical-values{
   top:49%;
   left:1%;
@@ -462,7 +439,6 @@ TYPICAL CONTEXTS PAGE
   height:30%;
 }
 
-/* BOTTOM SECTIONS */
 .typical-why{
   top:82.2%;
   left:1%;
@@ -477,9 +453,7 @@ TYPICAL CONTEXTS PAGE
   height:17.4%;
 }
 
-/* =========================
-SKILL BUILDING PAGE
-========================= */
+/* SKILL BUILDING PAGE */
 
 .skill-wrapper{
   position:relative;
@@ -508,7 +482,6 @@ SKILL BUILDING PAGE
   border:3px solid orange;
 }
 
-/* TITLE SECTION */
 .skill-title{
   top:0%;
   left:0%;
@@ -516,7 +489,6 @@ SKILL BUILDING PAGE
   height:13%;
 }
 
-/* ROWS */
 .skill-awareness{
   top:13.3%;
   left:1%;
@@ -566,7 +538,6 @@ SKILL BUILDING PAGE
   height:8.8%;
 }
 
-/* BOTTOM SECTIONS */
 .skill-cycle{
   top:86%;
   left:1%;
@@ -581,9 +552,7 @@ SKILL BUILDING PAGE
   height:14%;
 }
 
-/* =========================
-ORIENTATION PAGE
-========================= */
+/* ORIENTATION PAGE */
 
 .orientation-wrapper{
   position:relative;
@@ -612,7 +581,6 @@ ORIENTATION PAGE
   border:3px solid orange;
 }
 
-/* TITLE SECTION */
 .orientation-title{
   top:0%;
   left:0%;
@@ -620,7 +588,6 @@ ORIENTATION PAGE
   height:24%;
 }
 
-/* FUTURE */
 .orientation-future{
   top:24.5%;
   left:3%;
@@ -628,7 +595,6 @@ ORIENTATION PAGE
   height:18.5%;
 }
 
-/* PAST */
 .orientation-past{
   top:44.2%;
   left:3%;
@@ -636,7 +602,6 @@ ORIENTATION PAGE
   height:19.7%;
 }
 
-/* PRESENT */
 .orientation-present{
   top:64%;
   left:3%;
@@ -644,7 +609,6 @@ ORIENTATION PAGE
   height:18.3%;
 }
 
-/* BOTTOM BALANCE SECTION */
 .orientation-balance{
   top:83.5%;
   left:3%;
@@ -652,9 +616,7 @@ ORIENTATION PAGE
   height:15%;
 }
 
-/* =========================
-MODE OF OPERATION PAGE
-========================= */
+/* MODE OF OPERATION PAGE */
 
 .mode-wrapper{
   position:relative;
@@ -683,7 +645,6 @@ MODE OF OPERATION PAGE
   border:3px solid orange;
 }
 
-/* TITLE */
 .mode-title{
   top:0%;
   left:0%;
@@ -691,7 +652,6 @@ MODE OF OPERATION PAGE
   height:14%;
 }
 
-/* ROWS */
 .mode-expands{
   top:15%;
   left:1%;
@@ -734,7 +694,6 @@ MODE OF OPERATION PAGE
   height:12%;
 }
 
-/* BOTTOM */
 .mode-bottom{
   top:92%;
   left:1%;
